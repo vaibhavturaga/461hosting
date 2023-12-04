@@ -1,0 +1,9 @@
+# ignore .env file
+.env
+package-lock.json
+node_modules/
+coverage/
+logs/
+package-lock.json
+checker.py
+helper.py

@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#packages-container {
+    margin-top: 20px;
+}
+
+.package {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.package-header {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.metric {
+    margin: 5px 0;
+}
+
+#npm-form-container {
+    margin-bottom: 20px;
+}
+
+#npm-urls {
+    width: 100%;
+    margin-bottom: 10px;
+}
+

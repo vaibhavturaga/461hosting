@@ -1,0 +1,5 @@
+https://www.npmjs.com/package/browserify
+https://github.com/cloudinary/cloudinary_npm
+https://www.npmjs.com/package/extremplafe
+https://github.com/nullivex/nodist
+https://github.com/lodash/lodash

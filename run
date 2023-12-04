@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Get the current directory
+current_dir="$(cd "$(dirname "$0")" && pwd)"
+
+# Function to check for the .env file in the dist directory
+check_env_file() {
+    if [ ! -f "$current_dir/dist/.env" ]; then
+        echo "The .env file is missing in the dist directory."
+        echo "Please make sure to copy the .env file into the dist directory before running."
+        exit 1
+    fi
+}
+
+# Check if the first argument is "install" and run npm install
+if [ "$1" = "install" ]; then
+    npm install
+    tsc
+elif [ "$1" = "test" ]; then
+    npx jest
+else
+    check_env_file
+    # Navigate to the /dist folder and execute index.js
+    cd "$current_dir/dist" || { echo "Failed to navigate to $current_dir/dist"; exit 1; }
+    # Execute your TypeScript CLI program
+    node index.js "$@" || { echo "Node.js script execution failed"; exit 1; }
+fi

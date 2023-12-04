@@ -1,0 +1,1 @@
+{"version":3,"file":"ingestion.js","sourceRoot":"","sources":["../../src/tools/ingestion.ts"],"names":[],"mappings":";;;AAGO,MAAM,aAAa,GAAG,CAC3B,WAAmB,EACnB,cAAsB,EACtB,IAAiB,EACjB,QAAyB,EACzB,EAAE;IACF,QAAQ,CAAC,eAAe,CAAC,WAAW,EAAE,cAAc,EAAE,IAAI,CAAC,CAAC;IAC5D,oFAAoF;IACpF,gFAAgF;AAClF,CAAC,CAAC;AATW,QAAA,aAAa,iBASxB"}

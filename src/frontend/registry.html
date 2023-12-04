@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Registry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Package Registry</h1>
+
+    <div id="npm-form-container">
+        <h2>Submit npm Package URL</h2>
+        <form id="npm-url-form">
+            <textarea id="npm-urls" rows="5" placeholder="Enter npm package URLs, one per line"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="search-form-container">
+        <h2>Search Packages</h2>
+        <form id="search-form">
+            <input type="text" id="search-query" placeholder="Enter search pattern"/>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="packages-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
